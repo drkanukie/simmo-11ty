@@ -6,8 +6,9 @@ eleventyNavigation:
   key: Contact
   order: 4
 ---
-* email
-* LinkedIn
+
+[:fa-envelope:](mailto:peter@xample.com) [Email](mailto:peter@xample.com)
+[:fa-linkedin:](https://linkedin.com/) [LinkedIn](https://linkedin.com/)
 
 **Company Name**
 Registered (number)

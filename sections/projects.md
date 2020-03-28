@@ -5,7 +5,7 @@ date: 2020-04-03
 tags:
   - sections
 class: projects
-layout: section.njk
+layout: partials/section.njk
 ---
 ### Project Name
 

@@ -5,5 +5,5 @@ date: 2020-04-01
 class: overview
 tags:
   - sections
-layout: section.njk
+layout: partials/section.njk
 ---

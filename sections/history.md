@@ -5,5 +5,5 @@ date: 2020-04-02
 class: history
 tags:
   - sections
-layout: section.njk
+layout: partials/section.njk
 ---

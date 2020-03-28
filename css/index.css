@@ -51,6 +51,16 @@ header:after {
   display: table;
   clear: both;
 }
+
+section {
+  margin-bottom: 2rem;
+  padding: 24px 72px;
+}
+
+section.history {
+  background: var(--lightgray);
+}
+
 table {
   margin: 1em 0;
 }
@@ -83,6 +93,13 @@ pre {
   margin: .5em 0;
   background-color: #f6f6f6;
 }
+
+
+p.lede {
+  font-size: larger;
+  color: var(--darkgray);
+}
+
 .highlight-line {
   display: block;
   padding: 0.125em 1em;
@@ -207,7 +224,7 @@ a[href].tag:visited {
   margin: 0;
 }
 
-/* Direct Links / Markdown Headers */
+/* Direct Links / Markdown Headers 
 .direct-link {
   font-family: sans-serif;
   text-decoration: none;
@@ -224,3 +241,4 @@ a[href].direct-link:focus:visited,
 :hover > a[href].direct-link:visited {
   color: #aaa;
 }
+*/

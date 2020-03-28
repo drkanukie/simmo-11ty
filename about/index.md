@@ -1,14 +1,11 @@
 ---
 layout: layouts/post.njk
-title: About Me
+title: Hi, I'm Peter Simpson
 templateClass: tmpl-post
 eleventyNavigation:
   key: About Me
   order: 3
 ---
-
-# Peter Simpson
-
 ## My experience
 
 * Driven, versatile and innovative business leader offering 20 years of experience with a unique 360 degree execution ability from sales to technology innovation.

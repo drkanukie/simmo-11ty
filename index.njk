@@ -6,9 +6,7 @@ eleventyNavigation:
 ---
 {% for section in collections.sections %}
   <section class="{{section.data.class}}">
-  <h2>{{section.data.title}}</h2>
-  <p class="lede">{{section.data.description}}</p>
-  {{ section.templateContent | safe }}
+    {{ section.templateContent | safe }}
   </section>
 {% endfor %}
 

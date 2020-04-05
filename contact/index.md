@@ -1,18 +1,21 @@
 ---
-layout: layouts/post.njk
+layout: layouts/page.njk
 title: Contact Peter
-templateClass: tmpl-post
+templateClass: page
 eleventyNavigation:
   key: Contact
   order: 4
 ---
 
-[:fa-envelope:](mailto:peter@xample.com) [Email](mailto:peter@xample.com)
+[:fa-envelope:](mailto:peter@leadershipkinetics.co.uk) [peter@leadershipkinetics.co.uk](mailto:peter@leadershipkinetics.co.uk)
 [:fa-linkedin:](https://linkedin.com/) [LinkedIn](https://linkedin.com/)
 
-**Company Name**
-Registered (number)
-PO Box 76
-Skipton
+**Leadership Kinetics Ltd**
+Suite E, 
+Canal Wharf, 
+Eshton Road
+Gargrave, 
+Skipton, 
+BD23 3SE
 
 

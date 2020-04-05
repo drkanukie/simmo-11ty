@@ -1,15 +1,15 @@
 {
-  "title": "Simmo Inc",
-  "url": "https://myurl.com/",
+  "title": "Leadership Kinetics",
+  "url": "https://wwww.leadershipkinetics.co.uk/",
   "description": "Technology consultant for TV and STBs.",
   "feed": {
     "subtitle": "Technology consultant for TV and STBs.",
     "filename": "feed.xml",
     "path": "/feed/feed.xml",
-    "id": "https://myurl.com/"
+    "id": "https://wwww.leadershipkinetics.co.uk/"
   },
   "author": {
     "name": "Peter Simpson",
-    "email": "youremailaddress@example.com"
+    "email": "PeterSimpson@leadershipkinetics.co.uk"
   }
 }

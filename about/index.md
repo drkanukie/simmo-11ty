@@ -8,6 +8,9 @@ eleventyNavigation:
 ---
 
 <div class="layout">
+<div class="headshot">
+  <img src="/img/peter-simpson.jpg" alt="Peter Simpson">
+</div>
 <div class="bio">
 
 <h2> Peter Simpson MEIT</h2>
@@ -26,8 +29,6 @@ eleventyNavigation:
 *MoD, The Technology Partnership, Olivetti&Oracle Research Lab, Adaptive Broadband, Three UK, Pace, Vidiator Inc, Nokia, ARRIS and CommScope.
 </div>
 
-<div class="headshot">
-  <img src="/img/peter-simpson.jpg" alt="Peter Simpson">
-</div>
+
 </div>
 

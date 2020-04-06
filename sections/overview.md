@@ -1,6 +1,6 @@
 ---
 title: Welcome to Leadership Kinetics
-date: 2020-04-01
+date: 2020-04-02
 class: overview
 tags:
   - sections

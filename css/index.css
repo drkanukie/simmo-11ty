@@ -7,33 +7,45 @@
   --navy: #17050F;
   --blue: #082840;
   --white: #fff;
+  --bodyFont: 'Aleo', sans-serif;
+  --titleFont: 'Fira Sans', sans-serif;
+  --bodyFontSize: 21px;
+  --aboutDirection: column;
+  --headshotOrder: 0;
+  --bioOrder: 0;
+  --bodyWidth: 100%
+  --sectionPadding: 16px 32px;
 }
+
+@media only screen and (min-width: 1024px) {
+  :root {
+  --bodyWidth: 960px;
+  --sectionPadding: 24px 72px;
+  --aboutDirection: row;
+  --bioOrder: 1;
+  --headshotOrder: 2;
+  }
+}
+
 * {
   box-sizing: border-box;
 }
+
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: system-ui, sans-serif;
+  font-family: var(--bodyFont);
   color: var(--darkgray);
   background-color: var(--white);
 }
 
 body {
-  width: 100%;
+  width: var(--bodyWidth);
   margin: 0 auto;
 }
 
-@media only screen and (min-width: 1024px) {
-  body {
-    width: 960px;
-  }
-  section {
-    padding: 24px 72px;
-  }
 
-}
 
 footer {
   border-top: 1px dashed var(--lightgray);
@@ -41,8 +53,65 @@ footer {
   padding: 1rem;
 }
 
+footer p {
+  font-size: 1rem;
+}
+
+section {
+  padding: var(--sectionPadding);
+}
+
+h1,h2,h3 {
+  font-family: var(--titleFont);
+  color: var(--darkgray);
+}
+
+h1 {
+  font-size: 32px;
+}
+
+h2 {
+  font-size: 24px;
+}
+p,ol,ul,dl {
+  font-size: var(--bodyFontSize);
+  line-height: 1.45;
+}
+
 p:last-child {
   margin-bottom: 0;
+}
+
+li {
+  margin-bottom: 21px;
+}
+
+.cover {
+  width: 100%;
+  min-height: 400px;
+  display: flex;
+  flex-direction: column;
+  padding: 4rem;
+  background-repeat: no-repeat;
+  
+  background-position: 50% 50%;
+  background-size: cover;
+}
+
+.cover h1,
+.cover h2 {
+  color: var(--white);
+}
+
+/* actual images */
+.people {
+  background-image: linear-gradient(to bottom, rgba(245, 246, 252, 0.52), rgba(117, 19, 93, 0.73)), 
+  url(/img/leadership.jpg);
+}
+
+.puzzle {
+  background-image: linear-gradient(to bottom, rgba(39, 40, 34, 0.9), rgba(39, 40, 34, 0.0)),
+  url(/img/puzzle.jpg);
 }
 
 /*
@@ -57,18 +126,25 @@ img {
   margin-bottom: 1em;
 }
 
-.about-page section .layout {
+.about-page .layout {
   display: flex;
+  flex-direction: var(--aboutDirection);
 }
 
-.about-page .headshot img {
-  width: 50%;
+.about-page .layout .bio {
+  order: var(--bioOrder)
 }
 
-.headshot {
+.about-page .layout .headshot {
   display: flex;
   flex-direction: column;
   align-items: center;
+  order: var(--headshotOrder);
+}
+
+.about-page .layout .headshot img {
+  width: 60%;
+  margin-bottom: 2rem;
 }
 
 p,
@@ -96,9 +172,6 @@ header:after {
   clear: both;
 }
 
-section {
-  
-}
 
 .overview {
   padding-top: 3rem;
@@ -147,7 +220,6 @@ pre {
   background-color: #f6f6f6;
 }
 
-
 p.lede {
   font-size: larger;
   color: var(--darkgray);
@@ -188,8 +260,8 @@ p.lede {
 .home {
   padding: 0 1rem;
   float: left;
-  margin: 1rem 0; /* 16px /16 */
-  font-size: 1em; /* 16px /16 */
+  margin: 1.3rem 0; /* 16px /16 */
+  font-size: 21px; /* 16px /16 */
 }
 .home :link:not(:hover) {
   text-decoration: none;
@@ -277,21 +349,3 @@ a[href].tag:visited {
   margin: 0;
 }
 
-/* Direct Links / Markdown Headers 
-.direct-link {
-  font-family: sans-serif;
-  text-decoration: none;
-  font-style: normal;
-  margin-left: .1em;
-}
-a[href].direct-link,
-a[href].direct-link:visited {
-  color: transparent;
-}
-a[href].direct-link:focus,
-a[href].direct-link:focus:visited,
-:hover > a[href].direct-link,
-:hover > a[href].direct-link:visited {
-  color: #aaa;
-}
-*/

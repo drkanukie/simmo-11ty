@@ -11,11 +11,11 @@ eleventyNavigation:
 [:fa-linkedin:](https://linkedin.com/) [LinkedIn](https://linkedin.com/)
 
 **Leadership Kinetics Ltd**
-Suite E, 
-Canal Wharf, 
+Suite E 
+Canal Wharf 
 Eshton Road
-Gargrave, 
-Skipton, 
+Gargrave 
+Skipton 
 BD23 3SE
 
 

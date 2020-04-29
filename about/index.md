@@ -9,7 +9,7 @@ eleventyNavigation:
 
 <div class="layout">
 <div class="headshot">
-  <img src="/img/peter-simpson.jpg" alt="Peter Simpson">
+  <img src="/img/peter-simpson500.png" alt="Peter Simpson">
 </div>
 <div class="bio">
 

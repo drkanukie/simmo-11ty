@@ -5,7 +5,7 @@ tags:
   - sections
 class: services
 ---
-Our services include:
+## Our services include
 
 + Leadership mentoring and development
 + Organisational structure reviews and improvements

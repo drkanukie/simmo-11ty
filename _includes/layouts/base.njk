@@ -6,15 +6,14 @@
     <title>{{ renderData.title or title or metadata.title }}</title>
     <meta name="Description" content="{{ renderData.description or description or metadata.description }}">
     <link rel="stylesheet" href="{{ '/css/index.css' | url }}">
-    <link rel="stylesheet" href="{{ '/css/prism-base16-monokai.dark.css' | url }}">
-    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Aleo:wght@400;700&display=swap" rel="stylesheet">
     <link rel="alternate" href="{{ metadata.feed.path | url }}" type="application/atom+xml" title="{{ metadata.title }}">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" >
   </head>
   <body>
-    <header>
-      <h1 class="home"><a href="{{ '/' | url }}">{{ metadata.title }}</a></h1>
+    <header {% if bannerOn %} class="bannerOn" {% endif %}>
+      <h1 class="home"><a href="{{ '/' | url }}"><img src="/img/lk-logo.svg" alt="{{ metadata.title }}" ></a></h1>
 
       {#- Read more about `eleventy-navigation` at https://www.11ty.dev/docs/plugins/navigation/ #}
       <ul class="nav">
